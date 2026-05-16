@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#222;
+}
+
+header{
+    width:100%;
+    padding:20px 80px;
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:#333;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    width:60%;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:12px 30px;
+    border:none;
+    background:gold;
+    font-size:18px;
+    border-radius:8px;
+}
+
+.about{
+    padding:80px;
+    text-align:center;
+    background:white;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.projects{
+    padding:80px;
+    background:#eee;
+}
+
+.projects h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.contact{
+    padding:80px;
+    text-align:center;
+    background:#222;
+    color:white;
+}
+
+.contact h2{
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.contact input,
+.contact textarea{
+    width:60%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+}
+
+.contact button{
+    padding:12px 30px;
+    border:none;
+    background:gold;
+    font-size:18px;
+    border-radius:8px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        width:90%;
+    }
+
+    .contact input,
+    .contact textarea{
+        width:90%;
+    }
+}
